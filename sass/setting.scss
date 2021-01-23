@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "SourceSansPro-SemiBold";
+    src: url("../fonts/sourcesanspro-semibold-webfont.woff2") format('woff2'),
+         url("../fonts/sourcesanspro-semibold-webfont.woff") format('woff'),
+         url("../fonts/SourceSansPro-SemiBold.ttf") format('truetype');
+    font-display: swap; /*нужно добавлять*/
+}
+@font-face {
+    font-family: "SourceSansPro-Regular";
+    src: url("../fonts/sourcesanspro-regular-webfont.woff2") format('woff2'),
+         url("../fonts/sourcesanspro-regular-webfont.woff") format('woff'),
+         url("../fonts/SourceSansPro-Regular.ttf") format('truetype');
+    font-display: swap; 
+}
+@font-face {
+    font-family: "SourceSansPro-Bold";
+    src: url("../fonts/sourcesanspro-bold-webfont.woff2") format('woff2'),
+         url("../fonts/sourcesanspro-bold-webfont.woff") format('woff'),
+         url("../fonts/SourceSansPro-Bold.ttf") format('truetype');
+    font-display: swap; 
+}
+@font-face {
+    font-family: "SourceSansPro-Black";
+    src: url("../fonts/sourcesanspro-black-webfont.woff2") format('woff2'),
+         url("../fonts/sourcesanspro-black-webfont.woff") format('woff'),
+         url("../fonts/SourceSansPro-Black.ttf") format('truetype');
+    font-display: swap; 
+}
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("../fonts/roboto-regular-webfont.woff2") format('woff2'),
+         url("../fonts/roboto-regular-webfont.woff") format('woff'),
+         url("../fonts/Roboto-Regular.ttf") format('truetype');
+    font-display: swap; 
+}
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url("../fonts/roboto-medium-webfont.woff2") format('woff2'),
+         url("../fonts/roboto-medium-webfont.woff") format('woff'),
+         url("../fonts/Roboto-Medium.ttf") format('truetype');
+    font-display: swap; 
+}
+@font-face {
+    font-family: "Roboto-Light";
+    src: url("../fonts/roboto-light-webfont.woff2") format('woff2'),
+         url("../fonts/roboto-light-webfont.woff") format('woff'),
+         url("../fonts/Roboto-Light.ttf") format('truetype');
+    font-display: swap; 
+}
