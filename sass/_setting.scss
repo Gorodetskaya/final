@@ -47,3 +47,37 @@
          url("../fonts/Roboto-Light.ttf") format('truetype');
     font-display: swap; 
 }
+body {
+    font-family: "Roboto-Light",sans-serif;
+    font-size: 16px;
+    color: #555;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+}
+p {
+    line-height: 28px;
+}
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1330px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+.btn {
+    color: #fff;
+    font-family: "Roboto-Regular",sans-serif;
+    text-transform: capitalize;
+    font-size: 16px;
+    width: 190px;
+    height: 50px;
+    border: 2px solid #fb414e;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
