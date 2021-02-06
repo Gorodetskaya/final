@@ -405,12 +405,21 @@ p {
   font-size: 16px;
   width: 190px;
   height: 50px;
-  border: 2px solid #fb414e;
+  border-style: solid;
+  border-width: 2px;
   border-radius: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  margin: 0 10px;
+}
+
+h5 {
+  font-family: "SourceSansPro-Bold", sans-serif;
+  color: #fff;
+  font-size: 48px;
+  margin: 0;
 }
 
 /* header */
@@ -419,11 +428,8 @@ p {
   background-size: cover;
   height: 100vh;
   background-position: center bottom;
-}
-
-.header {
-  padding-top: 70px;
-  padding-bottom: 57px;
+  padding-top: 9vh;
+  box-sizing: border-box;
 }
 
 .header .wrapper {
@@ -437,7 +443,6 @@ p {
   font-size: 36px;
   font-family: "SourceSansPro-Black", sans-serif;
   letter-spacing: -0.2px;
-  padding-bottom: 35px;
 }
 
 .red-point {
@@ -466,7 +471,7 @@ p {
 }
 
 .wr-home {
-  /*padding-top: 27.6vh;*/
+  padding-top: 5.6vh;
 }
 
 .wr-home .wrapper {
@@ -481,9 +486,8 @@ p {
   font-family: "SourceSansPro-Black", sans-serif;
   font-size: 60px;
   text-transform: capitalize;
-  /*font-weight: 600;*/
   letter-spacing: 0.2px;
-  margin-bottom: 60px;
+  margin-bottom: 7.4vh;
   max-width: 900px;
 }
 
@@ -491,14 +495,17 @@ p {
   text-align: center;
   color: #fff;
   font-size: 16px;
-  margin-bottom: 64px;
+  margin-bottom: 7.9px;
   max-width: 650px;
 }
 
 .wr-button {
   display: flex;
   align-items: center;
-  margin: 0 15px;
+}
+
+.btn-red {
+  border-color: #fb414e;
 }
 
 .btn:hover {
@@ -509,12 +516,15 @@ p {
 .wr-subsection .wrapper {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  top: -85px;
 }
 
 .options {
-  width: 420px;
-  height: 420px;
+  max-width: 420px;
   background-color: #202b30;
+  padding: 75px 55px 50px 50px;
+  box-sizing: border-box;
 }
 
 .options:hover {
@@ -522,50 +532,186 @@ p {
 }
 
 .options img {
-  margin-top: 75px;
-  margin-left: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 
 .options h3 {
   color: #fff;
   font-family: "Roboto-Medium", sans-serif;
   font-size: 20px;
-  margin-left: 50px;
+  position: relative;
 }
 
-.options span {
-  display: block;
+.options h3::after {
+  content: "";
   width: 50px;
-  height: 3px;
-  background-color: #fff;
-  margin-left: 50px;
-  margin-bottom: 50px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  display: block;
 }
 
 .options p {
   color: #fff;
   max-width: 300px;
-  margin-left: 50px;
+  margin-top: 50px;
 }
 
 /*3* wr-services/*/
-.services-title p {
-  font-family: "", san-serif;
+.section-title-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.wr-services-title-block h1 {
+.red {
+  color: #fb414e;
+}
+
+.services-title {
+  font-family: "SourceSansPro-Bold", sans-serif;
+  color: #fb414e;
+}
+
+.section-title-block h1 {
   color: #000;
   font-family: "SourceSansPro-Bold", sans-serif;
   font-size: 60px;
 }
 
-.wrapper-services-img {
+.section-title-block p {
+  max-width: 680px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services-text {
+  margin-bottom: 125px;
+}
+
+.services-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.service-blok {
+  max-width: 30%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-blok img {
+  height: 50px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.service-blok h4 {
+  font-family: "SourceSansPro-Bold", sans-serif;
+  font-size: 32px;
+  text-transform: capitalize;
+  margin: 30px 0;
+}
+
+/*4 wr-resalts*/
+.wr-resalts {
+  background-color: #202b30;
+}
+
+.wr-resalts .wrapper {
+  display: flex;
+  padding: 115px 0 110px 0;
+  box-sizing: border-box;
+}
+
+.wr-resalt-text {
+  padding: 0;
+}
+
+.wr-resalt-text h5 {
+  padding-top: 20px;
+}
+
+.wr-resalt-text p {
+  color: #fff;
+  margin: 50px 0;
+}
+
+.btn-white {
+  border-color: #fff;
+}
+
+.btn-red {
+  border-color: #c0301c;
+}
+
+.wr-resalt-img {
   display: flex;
 }
 
-/*4*/
-/*5*/
+.resalt-img-left, .resalt-img-right {
+  width: 255px;
+  height: 370px;
+}
+
+.resalt-img-left {
+  margin-right: 40px;
+}
+
+.resalt-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/*5* wr-quality*/
+.wr-quality {
+  background-color: #f8f8f8;
+}
+
+.wr-quality .wrapper {
+  display: flex;
+  padding: 140px 0 150px 0;
+  box-sizing: border-box;
+}
+
+.quality-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.quality-text h5 {
+  color: #000;
+}
+
+.quality-property {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 55px;
+}
+
+.quality-property-specifically {
+  width: 50%;
+}
+
+.quality-property-specifically .title {
+  font-family: "SourceSansPro-SemiBold", sans-serif;
+  font-size: 20px;
+  color: #000;
+}
+
+/* wr-latest-works*/
 .wr-latest-works {
   padding-top: 135px;
   padding-bottom: 55px;
@@ -576,13 +722,14 @@ p {
   align-items: center;
   justify-content: center;
   margin-bottom: 55px;
+  list-style-type: none;
 }
 
 .wrapper li {
   font-family: "SourceSansPro-Regular", serif;
   font-size: 16px;
-  /*margin-left: 28px;
-  margin-top: 27px;*/
+  margin-left: 28px;
+  margin-top: 27px;
 }
 
 .wrapper button {
@@ -596,30 +743,207 @@ p {
 
 .latest-works-foto {
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .list-item {
-  max-width: 440px;
-  width: 100%;
-  height: 335px;
-  margin-bottom: 30px;
-  display: inline-block;
+  width: 24%;
+  margin-bottom: 15px;
   position: relative;
 }
 
+.list-item::after {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
 .list-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center top;
 }
 
-/*6*/
-/*7*/
-/*8*/
-/*9*/
-/*10*/
+/*wr-clients-video*/
+.wr-clients-video {
+  margin-bottom: 125px;
+}
+
+.wr-clients-video .wrapper {
+  display: flex;
+}
+
+.clients-video {
+  width: 50%;
+  position: relative;
+}
+
+.clients-video video {
+  width: 635px;
+}
+
+.button-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 20px solid red;
+  z-index: 10;
+}
+
+.clients-video-texst {
+  width: 50%;
+}
+
+.clients-video-texst h5 {
+  color: #000;
+}
+
+.clients-video-texst p {
+  margin: 50px 0;
+}
+
+.btn-black {
+  color: #000;
+  border-color: #000;
+}
+
+/*wr-clients-logo*/
+.wr-clients-logo {
+  background-color: #202b30;
+  padding: 140px 0;
+  box-sizing: border-box;
+}
+
+.wr-clients-logo .wrapper {
+  display: flex;
+}
+
+.clients-logo-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.clients-logo-text h5 {
+  /*как обьеденить свойства*/
+  color: #fff;
+  text-align: right;
+}
+
+.clients-logo-text p {
+  color: #fff;
+  text-align: right;
+}
+
+.logo-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 55px;
+}
+
+.logo-img img {
+  object-fit: cover;
+  object-position: center;
+}
+
+/*wr-designs*/
+.wr-designs {
+  background-image: url("../media/designs/bg-designs.jpg");
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.wr-designs-text {
+  padding: 130px 0;
+  width: 50%;
+}
+
+.wr-designs-text h5, p {
+  /*почему отменяем выравнивание*/
+  color: #000;
+  text-align: left;
+}
+
+.designs-text-properties {
+  display: flex;
+}
+
+.title-properties {
+  font-family: "SourceSansPro-Regular", sans-serif;
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-top: 15px;
+}
+
+.designs-properties-left {
+  margin-right: 60px;
+}
+
+/*wr-feedback-form*/
+.wr-feedback {
+  padding: 140px 0;
+  box-sizing: border-box;
+}
+
+.wr-feedback-form {
+  display: flex;
+}
+
+.wr-feedback-form-text {
+  width: 50%;
+  padding-right: 100px;
+}
+
+.wr-feedback-form-text h5 {
+  color: #000;
+  text-align: right;
+}
+
+.wr-feedback-form-text p {
+  text-align: right;
+}
+
+.wr-feedback-form-text h5 {
+  /* что-то не то с отступом  и размером*/
+}
+
+.wr-feedback-form-form {
+  width: 50%;
+}
+
+.form-name, .form-service {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.wr-form-name-email {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-text {
+  width: 100%;
+}
+
+.btn-form {
+  background-color: #fb414e;
+  color: #fff;
+  width: 100%;
+  height: 50px;
+}
+
+/*wr-footer*/
+.wr-footer {
+  background-color: #202b30;
+  margin: 100px 0 60px 0;
+}
 
 /*# sourceMappingURL=main.css.map */
