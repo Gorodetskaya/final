@@ -153,7 +153,6 @@
     justify-content: space-between;
     margin-bottom: 70px;
 }
-
 .service-blok {
     max-width: 30%;
     margin: 10px;
@@ -197,18 +196,49 @@
 .btn-red {
     border-color:#c0301c;
 }
-.wr-resalt-img {
-    display: flex; 
+.slider {
+    min-width: 0;
+}
+.slick-slide {
+    margin: 0 100px; /*нужно ли ?*/
+}
+.slick-list {
+    overflow: hidden;
+    
+}
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+.slider {
+    position: relative;
+    padding-top: 25px;
+}
+.slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.resalt-img-left,.resalt-img-right {
+.slider .slick-dots button{
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.slider .slick-dots button:hover::after/* почему не работает*/ {
+    background-color: #fb414e;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    content: "";
+} 
+.slider_items {
     width: 255px;
-    height: 370px;   
 }
-.resalt-img-left {
-    margin-right: 40px;
-}
-.resalt-img img{
+.slider_items img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -285,7 +315,6 @@
     content: '';
     display: block;
     padding-top: 100%;
-
 }
 .list-item img {
     position: absolute;
@@ -310,7 +339,6 @@
 }
 .clients-video  video{
     width: 635px;
-    
 }
 .button-video {
     position: absolute;
@@ -319,8 +347,7 @@
     transform: translate(-50%, -50%);
     border: none;
     border-radius: 20px solid red;
-    z-index: 10;
-    
+    z-index: 10; 
 }
 .clients-video-texst {
     width: 50%;
@@ -359,10 +386,6 @@
     text-align: right;
 }
 
-.wr-logo-img {
-  
-    
-}
 .logo-img {
     display: flex;
     flex-wrap: wrap;
@@ -419,14 +442,17 @@ display: flex;
 .wr-feedback-form-text p {
     text-align: right;
 }
-.wr-feedback-form-text h5{
+
     /* что-то не то с отступом  и размером*/   
-}
+
 .wr-feedback-form-form {
     width: 50%;
 }
-
-.form-name,.form-service {
+.form-name {
+    width: 100%;
+    margin: 10px 0;
+}
+.form-service {
     width: 100%;
     margin: 10px 0;
 }
@@ -434,12 +460,9 @@ display: flex;
     display: flex;
     justify-content: space-between;
 }
-.form-name-email {
 
-}
 .form-text {
-    width: 100%;
-    
+    width: 100%;  
 }
 .btn-form {
     background-color: #fb414e;
@@ -451,4 +474,31 @@ display: flex;
 .wr-footer {
     background-color: #202b30;
     margin: 100px 0 60px 0;
+}
+.wr-form-text {
+    display: flex;
+
+}
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    margin-right: 330px;
+}
+.footer-text-contact,.contact-title {
+    max-width: 325px;
+    color: #fff;
+    text-align: left;
+}
+
+.footer-form form{
+    display: flex;
+}
+.btn-footer {
+    background-color: #fb414e;
+    color: #fff;
+    margin: 0;
+}
+.footer-img {
+    padding-bottom: 60px;
+    padding-top: 100px;
 }

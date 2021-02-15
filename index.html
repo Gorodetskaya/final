@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kallyas</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.css">
     </head>
 <body>
@@ -114,14 +115,20 @@
                     <a href="#" class="btn btn-white"> start now</a>
                 </div>
             </div>
-            <div class="wr-resalt-img">
-                <div class="resalt-img-left">
-                    <img src="media/resalts/office.jpg" alt="foto">
+                <div class="slider">
+                    <div class="slider_items">
+                        <img src="media/resalts/office.jpg" alt="">
+                    </div>
+                    <div class="slider_items">
+                        <img src="media/resalts/red-rectangle.jpg" alt="">
+                    </div>
+                    <div class="slider_items">
+                        <img src="media/resalts/office.jpg" alt="">
+                    </div>
+                    <div class="slider_items">
+                        <img src="media/resalts/red-rectangle.jpg" alt="">
+                    </div>
                 </div>
-                <div class="resalt-img-right">
-                    <img src="media/resalts/red-rectangle.jpg" alt="foto">
-                </div>
-            </div>
         </div>
     </section>
     <!-- wr-quality-->
@@ -325,13 +332,60 @@
             </div>
             <div class="wr-button">
                 <a href="#" class="btn btn-form">submit</a>
-            </div>
-            
+            </div> 
         </div>
     </section>
     <!--wr-footer-->
     <section class="wr-footer">
-        <div class="wrapper"></div>
+        <div class="wrapper">
+            <div class="footer-nav">
+                <a href="#" class="logo">Kallyas<span class="red-point">.</span></a>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Works</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="wr-form-text">
+                <div class="footer-text">
+                    <p class="contact-title">Contact</p>
+                    <p class="footer-text-contact">758 E. Beechwood Lane Bay Shore, NY 11706 youremail@address.com, +1-202-555-0158
+                    </p>
+
+                </div>
+                <div class="footer-form">
+                    <form>
+                        <input class="form-name-email" type="email" required placeholder="Your e-mail address*">
+                        <a href="#" class="btn btn-footer">submit</a>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-img">
+                <img src="media/footer-ikon/ikon-instagram.png" 
+                alt="foto">
+                <img src="media/footer-ikon/ikon-facebook.png" 
+                alt="foto">
+                <img src="media/footer-ikon/ikon-twitter.png" 
+                alt="foto">
+                <img src="media/footer-ikon/ikon-link.png" 
+                alt="foto">
+            </div>
+        </div>
     </section>
+
+   
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="js/main.js"></script>
+
 </body>
 </html>
