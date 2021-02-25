@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kallyas</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="icon" href="media/favicon.jpg" type="image/x-icon">
+   
     <link rel="stylesheet" href="./css/main.css">
-    </head>
+</head>
 <body>
     <!--wr-intro-->
     <section class="wr-intro">
         <header class="header">
             <div class="wrapper">
                 <a href="#" class="logo">Kallyas<span class="red-point">.</span></a>
+                <div class="header-burger">
+                    <span></span>
+                </div>
                 <nav class="nav">
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -182,44 +186,36 @@
         </div>
     </section>
     <!--wr-latest-works-->
+
     <section class="wr-latest-works">
-        <div class="wrapper">
-            <ul>
-                <li><button>All</button></li>
-                <li><button>WEB</button></li>
-                <li><button>ADVETISING</button></li>
-                <li><button>DRANDING</button></li>
-                <li><button>DESIGN</button></li>
-                <li><button>PHOTOGRAPHY</button></li>
-            </ul>
-            <div class="latest-works-foto">
-                <div class="list-item">
-                    <img src="media/latest-works-foto/1.jpg" alt="foto"> 
-                </div>
-                <div class="list-item">
-                    <img src="media/latest-works-foto/2.jpg" alt="foto"> 
-                </div>
-                <div class="list-item">
-                    <img src="media/latest-works-foto/3.jpg" alt="foto">
-                </div>
-                <div class="list-item">
-                    <img src="media/latest-works-foto/4.jpg" alt="foto"> 
-                </div> 
-                <div class="list-item">
-                    <img src="media/latest-works-foto/5.jpg" alt="foto"> 
-                </div>
-                <div class="list-item">
-                    <img src="media/latest-works-foto/6.jpg" alt="foto"> 
-                </div>
-                <div class="list-item">
-                    <img src="media/latest-works-foto/7.jpg" alt="foto"> 
-                </div>
-                <div class="list-item">
-                    <img src="media/latest-works-foto/8.jpg" alt="foto"> 
-                </div>
+        <div class="btns-container">
+            <button class="btn active" id="item-all">all</button>
+            <button class="btn" id="item1">WEB</button>
+            <button class="btn" id="item2">ADVETISING</button>
+            <button class="btn" id="item3">DRANDING</button>
+            <button class="btn" id="item4">DESIGN</button>
+            <button class="btn" id="item5">PHOTOGRAPHY</button>
+        </div>
+
+        <div class="items-container">
+            <div class="item item1" data-item="item2">
+            </div>
+            <div class="item item2" data-item="item3">
+            </div>
+            <div class="item item3" data-item="item1">
+            </div>
+            <div class="item item4" data-item="item3">
+            </div>
+            <div class="item item5" data-item="item1">
+            </div>
+            <div class="item item6" data-item="item2">
+            </div>
+            <div class="item item7" data-item="item4">
+            </div>
+            <div class="item item8" data-item="item5">
             </div>
         </div>
-    </section> 
+    </section>
     <!--wr-clients-video-->
     <section class="wr-clients-video">
         <div class="wrapper">
@@ -234,9 +230,14 @@
                     <a href="#" class="btn btn-black"> learn more</a>
                 </div>
             </div>
-            <div class="clients-video">
-                <video src="media/office.mp4" controls></video>
-                <button class="button-video"></button>
+            <div id="wrap">
+                    <div id="video">
+                      <div class="video-control" id="video-play"></div>
+                      <div class="video-control" id="video-over"></div>
+                      <video id="myVideo" preload="auto" poster="media/video_poster.jpg">
+                        <source id='mp4' src="media/office.mp4" type='video/mp4' />
+                        <source id='webm' src="media/office.webm" type='video/webm' />
+                      </video>
             </div>
         </div>
     </section>
@@ -246,8 +247,14 @@
             <div class="wr-logo-img">
                 <div class="logo-img">
                     <img src="media/clients-logo/client-logo2.png" alt="foto">
+                </div>
+                <div class="logo-img">
                     <img src="media/clients-logo/client-logo1.png" alt="foto">
+                    </div>
+                    <div class="logo-img">
                     <img src="media/clients-logo/client-logo3.png" alt="foto">
+                    </div>
+                    <div class="logo-img">
                     <img src="media/clients-logo/client-logo4.png" alt="foto">
                 </div>
             </div>
@@ -354,26 +361,30 @@
             <div class="wr-form-text">
                 <div class="footer-text">
                     <p class="contact-title">Contact</p>
-                    <p class="footer-text-contact">758 E. Beechwood Lane Bay Shore, NY 11706 youremail@address.com, +1-202-555-0158
+                    <p class="footer-text-contact">758 E. Beechwood Lane Bay Shore, NY 11706<br><a href="mailto:youremail@address.comru">youremail@address.com</a>, <a href="tel:+1-202-555-0158">+1-202-555-0158</a>
                     </p>
-
+                    <div class="footer-img">
+                        <img src="media/footer-ikon/ikon-all.png" 
+                        alt="foto">
+                       <!-- <img src="media/footer-ikon/ikon-instagram.png" 
+                        alt="foto">
+                        <img src="media/footer-ikon/ikon-facebook.png" 
+                        alt="foto">
+                        <img src="media/footer-ikon/ikon-twitter.png" 
+                        alt="foto">
+                        <img src="media/footer-ikon/ikon-link.png" 
+                        alt="foto">-->
+                    </div>
                 </div>
                 <div class="footer-form">
+                    <p class="form-title">Subscribe to newsletter</p>
                     <form>
                         <input class="form-name-email" type="email" required placeholder="Your e-mail address*">
                         <a href="#" class="btn btn-footer">submit</a>
                     </form>
+                    <p class="copyright">© 2019. All rights reserved. Buy Kallyas Wordpress Theme.
+                    </p>
                 </div>
-            </div>
-            <div class="footer-img">
-                <img src="media/footer-ikon/ikon-instagram.png" 
-                alt="foto">
-                <img src="media/footer-ikon/ikon-facebook.png" 
-                alt="foto">
-                <img src="media/footer-ikon/ikon-twitter.png" 
-                alt="foto">
-                <img src="media/footer-ikon/ikon-link.png" 
-                alt="foto">
             </div>
         </div>
     </section>
@@ -384,7 +395,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
  
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/main.js"></script>
 
 </body>
